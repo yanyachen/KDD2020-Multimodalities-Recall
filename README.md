@@ -25,13 +25,13 @@
 - Image Embedding
   - We firstly generate image metadata input embedding and image input embedding with DNN.
   - The image metadata input embedding should contain position and class information.
-  - We fuse the image input embedding and image metadata input embedding together and process with transformer layers to capture the image information and relative position information all together, similar to [1].
+  - We fuse the image input embedding and image metadata input embedding together and process with transformer layers to capture the image information and relative position information all together, similar to DETR[1].
 
 - Negative Sampling
   - We conduct in-batch negative sampling on (text embedding, image embedding) pairs. Note that negative sampling should be conducted before cross attention to avoid leakage.
 
 - Mathching
-  - We use cross-attention and gated-fusion to better takes comprehensive and fine-grained cross-modal interactions into account, similar to [2].
+  - We use cross-attention and gated-fusion to better takes comprehensive and fine-grained cross-modal interactions into account, similar to CAMP[2].
 
 - Training
   - We label positive image and text pairs as 1, and negative pairs as 0, and use binary logloss as the loss function for training.
