@@ -38,7 +38,7 @@
 
 ## Reflection
 - Pre-trained Text Embedding
-  - We should have use BERT, but doesn't have enough computing resource to finetune.
+  - We should have used BERT, but doesn't have enough computing resource to finetune.
 
 - Negative Sampling
   - We use in-batch negative sampling for efficiency, but this sampling method doesn't upsample hard negastive example which is not ideal in this competition setting.
@@ -49,7 +49,7 @@
   - Focal Loss should be used for (at least partially) preventing the easy negative example problem.
 
 - Model Architecture
-  - Our model architecture is not overparameterized enough. We are on right direction in terms of architecture (transformer and cross-attention), but should have use more Transformer or BERT layers to extract information and more cross-attention layers to co-attend.
+  - Our model architecture is not overparameterized enough. We are on right direction in terms of architecture (transformer and cross-attention), but should have used more Transformer or BERT layers to extract information and more cross-attention layers to co-attend.
   - MCAN[3] and VisualBERT[4] can be considered.
 
 
