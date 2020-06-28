@@ -10,7 +10,7 @@
 
 ## Pre-processing
 - Image Metadata Feature  
-  - We generate relative size and relative postion, together with class labels, as image metadata features
+  - We generate relative size and relative position, together with class labels, as image metadata features
 
 - Image Feature
   - We directely use the provided feature as image feature.
